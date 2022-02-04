@@ -1,0 +1,26 @@
+<div class="container">
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Votes</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of dataList">
+                    <td>{{data.title}}</td>
+                    <td>{{data.votes}}</td>
+                    <td>{{data.date}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <button (click)="sortVotes()">SortVotes</button>
+    </div>
+    <div>
+        <button>SortDates</button>
+    </div>
+</div>
